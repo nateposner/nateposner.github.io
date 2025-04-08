@@ -1,0 +1,78 @@
+/*CSS DOCUMENT*/
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	}
+
+div.container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 1em;
+	max-width: 60em;
+	column-gap: 1em;
+}
+
+header {
+	flex: 1 0 100%;
+	/* border: 2px solid green; */
+}
+
+img {
+	width: 100%;
+	}
+
+figure {
+	padding: 0em;
+	margin: 0;
+}
+
+article {
+	flex: 2 0 20em;
+	/* border: 2px solid blue; */
+	padding: 0;
+}
+
+aside { 
+	flex: 1 0 10em;
+}
+
+footer {
+	flex: 1 0 100%;
+	border-top: 2px solid rgb(133, 133, 133);
+}
+
+footer a {
+	color: rgb(72, 72, 72);
+}
+
+section {
+	background-color: rgb(238,238,238);
+	padding: 1em;
+	/* border: 2px solid red; */
+	margin-bottom: 1em;	
+}
+
+h3 {
+	/* border: 2px solid rgb(0, 255, 38); */
+	margin: 0.5em 0em 0em;
+}
+
+section p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+ol {
+	margin-left: 0;
+	padding-left: 0;
+}
+
