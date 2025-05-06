@@ -7,7 +7,7 @@ img {
     display: block;
 }
 
-div.container {
+div.container, div.home-container {
     max-width: 40em;
     margin: auto;
 }
@@ -97,13 +97,116 @@ footer p {
     margin: 0 0.5rem;
 }
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 35em) {
     nav ul li {
         display: inline-block;
         margin: 0.5em 1.5em 0 0;
     }
-    
+
     header, h1, h2, p, figcaption, footer p {
         margin-left: 0;
     }
+  }
+
+
+  @media only screen and (min-width: 60em) {
+    
+/* home */
+    div.home-container {
+        max-width: 80em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    div.home-container aside {
+        background: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    div.home-container main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    header, footer {
+        grid-column: 1/3;
+    }
+
+/* mainstory */
+    div.container {
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    div.container aside {
+        margin-top: 0;
+    }
+
+/* primary */
+
+    section.primary {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+    }
+
+    section.primary a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.primary a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    section.primary a figure img {
+        object-fit: cover;
+    }
+
+    section.primary a h2 {
+        flex: 0 0 1em;
+    }
+
+    section.primary a p {
+        flex: 0 0 4em;
+    }
+
+/* secondary */
+
+    section.secondary {
+        display: flex;
+    }
+
+    section.secondary a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.secondary a figure {
+        flex: 1 0 12em;
+        display: flex;
+    }
+
+    section.secondary a figure img {
+        object-fit: cover;
+    }
+
+    section.secondary a h2 {
+        flex: 0 0 1em;
+    }
+
+    section.secondary a p {
+        flex: 0 0 4em;
+    }
+
   }
